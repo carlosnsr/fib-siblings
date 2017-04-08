@@ -1,7 +1,7 @@
 # Fibonacci Siblings
 
 Implemented the Fibonacci Siblings (at least, that's what I call it) in
-Elixir, and JavaScript
+Elixir, Ruby, and JavaScript
 
 The below instructions run the included tests for each.
 Each set of instructions assume that one is starting from the project root.
@@ -19,4 +19,12 @@ Each set of instructions assume that one is starting from the project root.
    cd javascript
    npm install
    npm test
+```
+
+## In Ruby
+
+```
+   cd ruby
+   bundle
+   rspec spec/fib_siblings-spec.rb
 ```
