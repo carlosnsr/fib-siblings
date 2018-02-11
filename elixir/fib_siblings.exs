@@ -9,9 +9,11 @@ defmodule Fib do
   """
   def siblings(num) when num < 0, do: {0, 0} # an error would be more appropriate
   def siblings(1), do: {0, 2} # edge case, because algorithm fails for {1, 1, 2}
-  def siblings(num), do: _siblings(num, {0, 0, 1}) # extra zero to handle when num == 0
+  # Start from a seed value of {0, 0, 1}, and figure out the rest.
+  # The extra zero handles the case when num == 0
+  def siblings(num), do: _siblings(num, {0, 0, 1})
 
   defp _siblings(n, {_a, b, c}) when n >= c, do: _siblings(n, {b, c, b + c})
   defp _siblings(n, {a, b, c}) when n == b, do: {a, c}
-  defp _siblings(n, {_a, b, c}), do: {b, c}
+  defp _siblings(_n, {_a, b, c}), do: {b, c}  # b < n < c
 end
