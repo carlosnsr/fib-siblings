@@ -12,6 +12,12 @@ e.g.
   Input: 4  Answer: 3, 5
   Input: 5  Answer: 3, 8
 
+## Skills Demonstrated
+
+- Solving a problem algorithmically
+- Coding in Elixir, Ruby, and JavaScript
+- Testing in ExUnit, RSpec, and Chai
+
 ## Installation
 
 1. Clone the repository
